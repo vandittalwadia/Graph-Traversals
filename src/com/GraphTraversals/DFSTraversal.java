@@ -11,6 +11,8 @@ public class DFSTraversal {
             adjList[i]= new LinkedList<>();
         }
     }
+    
+    //Creating Adjacency List
     public void addEdge(int u , int v){
         adjList[u].add(v);
         adjList[v].add(u);
