@@ -11,7 +11,7 @@ public class BFSTraversal {
           this.adjlist[i]= new LinkedList<>();
       }
     }
-
+    //Creating adjacency list
     public void addEdge(int u , int v){
        adjlist[u].add(v);
        adjlist[v].add(u);
