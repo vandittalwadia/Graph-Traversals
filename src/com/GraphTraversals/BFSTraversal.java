@@ -19,6 +19,7 @@ public class BFSTraversal {
 
     public void bfsTraversal(int sourceNode , int nodes){
         Queue<Integer> q = new LinkedList<Integer>();
+        //boolean array to mark visited nodes
         Boolean[] visited = new Boolean[nodes];
         for(int i=0;i<nodes;i++){
             visited[i]=false;
@@ -28,6 +29,7 @@ public class BFSTraversal {
         while(!q.isEmpty()){
             int u = q.poll();
             System.out.print(u+" ");
+            //checking for adjacent nodes
             for(int v : adjlist[u]){
                 if(!visited[v]){
                     visited[v]=true;
